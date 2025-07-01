@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5d6e0, #f8d9e0, #fae1e7, #ffefea);
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border: 5px solid #ff99cc;
+    border-radius: 20px;
+    background-color: #fff0f6;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6699;
+    font-family: 'Indie Flower', cursive;
+    font-size: 36px; /* Consider using relative units like 'em' for better scalability */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    body {
+        display: block; /* Change flex display to block for mobile */
+        padding: 10px; /* Add padding to avoid edge-to-edge text */
+    }
+    .container {
+        width: auto; /* Adjust container width to fit smaller screens */
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+    h1 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+}
+
+.poem p {
+    color: #ff3366;
+    font-size: 20px;
+    margin: 15px 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: white;
+    border: 3px solid #ff99cc;
+    border-radius: 20px;
+    display: none;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
